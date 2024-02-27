@@ -28,139 +28,141 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            checkedListBox1 = new CheckedListBox();
-            label3 = new Label();
-            label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            pictureBox1 = new PictureBox();
-            label5 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(59, 145);
-            label1.Name = "label1";
-            label1.Size = new Size(254, 38);
-            label1.TabIndex = 0;
-            label1.Text = "[Nadpis poznámky]";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(59, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(254, 38);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "[Nadpis poznámky]";
             // 
             // label2
             // 
-            label2.AutoEllipsis = true;
-            label2.BorderStyle = BorderStyle.FixedSingle;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(59, 224);
-            label2.Name = "label2";
-            label2.Size = new Size(800, 186);
-            label2.TabIndex = 1;
-            label2.Text = "[Popisek]";
+            this.label2.AutoEllipsis = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(59, 224);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(800, 186);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "[Popisek]";
             // 
             // checkedListBox1
             // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(59, 497);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(381, 172);
-            checkedListBox1.TabIndex = 2;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(59, 497);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(381, 172);
+            this.checkedListBox1.TabIndex = 2;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(59, 429);
-            label3.Name = "label3";
-            label3.Size = new Size(305, 32);
-            label3.TabIndex = 3;
-            label3.Text = "Termín splnění: [xx.yy.2024]";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(59, 429);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(305, 32);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Termín splnění: [xx.yy.2024]";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ControlDarkDark;
-            label4.Location = new Point(59, 183);
-            label4.Name = "label4";
-            label4.Size = new Size(220, 28);
-            label4.TabIndex = 4;
-            label4.Text = "(vytvořeno [xx.yy.2024])";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(59, 183);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(220, 28);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "(vytvořeno [xx.yy.2024])";
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(657, 721);
-            button1.Name = "button1";
-            button1.Size = new Size(209, 83);
-            button1.TabIndex = 5;
-            button1.Text = "Splněno";
-            button1.UseVisualStyleBackColor = true;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(657, 721);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(209, 83);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Splněno";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(59, 24);
-            button2.Name = "button2";
-            button2.Size = new Size(117, 69);
-            button2.TabIndex = 6;
-            button2.Text = "Smazat";
-            button2.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(59, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(117, 69);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Smazat";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            button3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(196, 24);
-            button3.Name = "button3";
-            button3.Size = new Size(117, 69);
-            button3.TabIndex = 7;
-            button3.Text = "Upravit";
-            button3.UseVisualStyleBackColor = true;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(196, 24);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(117, 69);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Upravit";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            pictureBox1.Location = new Point(564, 26);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(70, 67);
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Location = new System.Drawing.Point(564, 26);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 67);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(640, 56);
-            label5.Name = "label5";
-            label5.Size = new Size(190, 32);
-            label5.TabIndex = 9;
-            label5.Text = "[Název projektu]";
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(640, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(190, 32);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "[Název projektu]";
             // 
             // PoznamkaView
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label5);
-            Controls.Add(pictureBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(checkedListBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "PoznamkaView";
-            Size = new Size(901, 830);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "PoznamkaView";
+            this.Size = new System.Drawing.Size(901, 830);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

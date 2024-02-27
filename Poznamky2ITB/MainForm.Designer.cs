@@ -28,128 +28,128 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            projektManagerToolStripMenuItem = new ToolStripMenuItem();
-            přidatPoznámkuToolStripMenuItem = new ToolStripMenuItem();
-            splitContainer1 = new SplitContainer();
-            flowLayoutPanel1 = new FlowLayoutPanel();
-            panel1 = new Panel();
-            label1 = new Label();
-            comboBox1 = new ComboBox();
-            poznamkaView1 = new PoznamkaView();
-            menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
-            splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
-            splitContainer1.SuspendLayout();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.projektManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.přidatPoznámkuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.poznamkaView1 = new Poznamky2ITB.PoznamkaView();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { projektManagerToolStripMenuItem, přidatPoznámkuToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1130, 33);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.projektManagerToolStripMenuItem,
+            this.přidatPoznámkuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1130, 33);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // projektManagerToolStripMenuItem
             // 
-            projektManagerToolStripMenuItem.Name = "projektManagerToolStripMenuItem";
-            projektManagerToolStripMenuItem.Size = new Size(158, 29);
-            projektManagerToolStripMenuItem.Text = "Projekt Manager";
-            projektManagerToolStripMenuItem.Click += projektManagerToolStripMenuItem_Click;
+            this.projektManagerToolStripMenuItem.Name = "projektManagerToolStripMenuItem";
+            this.projektManagerToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
+            this.projektManagerToolStripMenuItem.Text = "Projekt Manager";
             // 
             // přidatPoznámkuToolStripMenuItem
             // 
-            přidatPoznámkuToolStripMenuItem.Name = "přidatPoznámkuToolStripMenuItem";
-            přidatPoznámkuToolStripMenuItem.Size = new Size(163, 29);
-            přidatPoznámkuToolStripMenuItem.Text = "Přidat poznámku";
-            přidatPoznámkuToolStripMenuItem.Click += přidatPoznámkuToolStripMenuItem_Click;
+            this.přidatPoznámkuToolStripMenuItem.Name = "přidatPoznámkuToolStripMenuItem";
+            this.přidatPoznámkuToolStripMenuItem.Size = new System.Drawing.Size(163, 29);
+            this.přidatPoznámkuToolStripMenuItem.Text = "Přidat poznámku";
             // 
             // splitContainer1
             // 
-            splitContainer1.Dock = DockStyle.Fill;
-            splitContainer1.Location = new Point(0, 33);
-            splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 33);
+            this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(flowLayoutPanel1);
-            splitContainer1.Panel1.Controls.Add(panel1);
+            this.splitContainer1.Panel1.Controls.Add(this.flowLayoutPanel1);
+            this.splitContainer1.Panel1.Controls.Add(this.panel1);
             // 
             // splitContainer1.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(poznamkaView1);
-            splitContainer1.Size = new Size(1130, 773);
-            splitContainer1.SplitterDistance = 376;
-            splitContainer1.TabIndex = 1;
+            this.splitContainer1.Panel2.Controls.Add(this.poznamkaView1);
+            this.splitContainer1.Size = new System.Drawing.Size(1130, 773);
+            this.splitContainer1.SplitterDistance = 376;
+            this.splitContainer1.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Location = new Point(3, 137);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(370, 642);
-            flowLayoutPanel1.TabIndex = 1;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 137);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(370, 642);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel1
             // 
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(comboBox1);
-            panel1.Location = new Point(3, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(370, 128);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(370, 128);
+            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(9, 45);
-            label1.Name = "label1";
-            label1.Size = new Size(119, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Vyber projekt";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Vyber projekt";
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(151, 45);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(205, 33);
-            comboBox1.TabIndex = 0;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(151, 45);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(205, 33);
+            this.comboBox1.TabIndex = 0;
             // 
             // poznamkaView1
             // 
-            poznamkaView1.Dock = DockStyle.Fill;
-            poznamkaView1.Location = new Point(0, 0);
-            poznamkaView1.Name = "poznamkaView1";
-            poznamkaView1.Size = new Size(750, 773);
-            poznamkaView1.TabIndex = 0;
+            this.poznamkaView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.poznamkaView1.Location = new System.Drawing.Point(0, 0);
+            this.poznamkaView1.Name = "poznamkaView1";
+            this.poznamkaView1.Size = new System.Drawing.Size(750, 773);
+            this.poznamkaView1.TabIndex = 0;
+            this.poznamkaView1.Load += new System.EventHandler(this.poznamkaView1_Load);
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1130, 806);
-            Controls.Add(splitContainer1);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
-            Name = "MainForm";
-            Text = "MainForm";
-            Load += MainForm_Load;
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
-            splitContainer1.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1130, 806);
+            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "MainForm";
+            this.Text = "MainForm";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
