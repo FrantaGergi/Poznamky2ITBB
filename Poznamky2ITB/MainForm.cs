@@ -20,7 +20,7 @@ namespace Poznamky2ITB
             {
                 CreatePoznamkasViews();
                 poznamkaView1.Hide();
-                
+
             };
             poznamkaView1.Hide();
 
@@ -50,7 +50,9 @@ namespace Poznamky2ITB
             PoznamkaSmallView smallPoznamka = new PoznamkaSmallView();
             smallPoznamka.SetupPoznamka(poznamka);
             smallPoznamka.PoznamkaSelected += OnPoznamkaSelected;
-            flowLayoutPanel1.Controls.Add(smallPoznamka);
+          
+                flowLayoutPanel1.Controls.Add(smallPoznamka);
+            
         }
 
         private void OnPoznamkaSelected(PoznamkaSmallView view)
@@ -116,6 +118,11 @@ namespace Poznamky2ITB
         }
 
         private void poznamkaView1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
