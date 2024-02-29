@@ -43,6 +43,7 @@ namespace Poznamky2ITB
             newPoznamka.Headline = textBox1.Text;
             newPoznamka.Description = richTextBox1.Text;
             newPoznamka.DueDate = dateTimePicker1.Value;
+            newPoznamka.Finished = false;
 
             var project = comboBox1.SelectedItem as Project;
             if(project == null)
@@ -57,7 +58,6 @@ namespace Poznamky2ITB
             {
                 subtasks.Add(item.ToString());
             }
-            newPoznamka.Finished = false;
             newPoznamka.Subtasks = subtasks;
 
             DataManager.Instance.AddPoznamka(newPoznamka);

@@ -26,6 +26,8 @@ namespace Poznamky2ITB
 
         }
 
+
+
         private void MainForm_Load(object sender, EventArgs e)
         {
             DataManager.Instance.LoadProjects();
@@ -33,10 +35,29 @@ namespace Poznamky2ITB
 
             DataManager.Instance.LoadPoznamkas();
             CreatePoznamkasViews();
-        }
 
+            poznamkaView1.PoznamkaChanged += DoIt;
+           
+        }
+        private void DoIt()
+        {
+            
+            selectedPoznamka.Data.Finished = true;
+            poznamkaView1.SetPoznamka(selectedPoznamka.Data);
+            CreatePoznamkasViews();
+            DataManager.Instance.SavePoznamkas();
+            DataManager.Instance.LoadPoznamkas();
+          
+            
+        }
         private void CreatePoznamkasViews()
         {
+
+           
+
+
+
+
             flowLayoutPanel1.Controls.Clear();
 
             foreach (var poznamka in DataManager.Instance.PoznamkaList)
@@ -55,7 +76,7 @@ namespace Poznamky2ITB
             
         }
 
-        private void OnPoznamkaSelected(PoznamkaSmallView view)// here poznamky 
+        private void OnPoznamkaSelected(PoznamkaSmallView view)// here je ta vybrana
         {
             if (selectedPoznamka != null)
             {
@@ -67,9 +88,9 @@ namespace Poznamky2ITB
             poznamkaView1.Show();
 
 
-
+            
         }
-
+        
         private void FillFilter()
         {
             comboBox1.Items.Clear();

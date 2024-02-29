@@ -53,28 +53,30 @@
             this.přidatPoznámkuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1528, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(1070, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // projektManagerToolStripMenuItem
             // 
             this.projektManagerToolStripMenuItem.Name = "projektManagerToolStripMenuItem";
-            this.projektManagerToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
+            this.projektManagerToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.projektManagerToolStripMenuItem.Text = "Projekt Manager";
             this.projektManagerToolStripMenuItem.Click += new System.EventHandler(this.projektManagerToolStripMenuItem_Click);
             // 
             // přidatPoznámkuToolStripMenuItem
             // 
             this.přidatPoznámkuToolStripMenuItem.Name = "přidatPoznámkuToolStripMenuItem";
-            this.přidatPoznámkuToolStripMenuItem.Size = new System.Drawing.Size(163, 29);
+            this.přidatPoznámkuToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.přidatPoznámkuToolStripMenuItem.Text = "Přidat poznámku";
             this.přidatPoznámkuToolStripMenuItem.Click += new System.EventHandler(this.přidatPoznámkuToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 33);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 24);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -85,42 +87,47 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.poznamkaView1);
-            this.splitContainer1.Size = new System.Drawing.Size(1528, 953);
-            this.splitContainer1.SplitterDistance = 508;
+            this.splitContainer1.Size = new System.Drawing.Size(1070, 586);
+            this.splitContainer1.SplitterDistance = 355;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 137);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(2, 82);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(370, 642);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(259, 385);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 128);
+            this.panel1.Size = new System.Drawing.Size(259, 77);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 45);
+            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.Size = new System.Drawing.Size(77, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Vyber projekt";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(151, 45);
+            this.comboBox1.Location = new System.Drawing.Point(106, 27);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 33);
+            this.comboBox1.Size = new System.Drawing.Size(145, 23);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -128,20 +135,21 @@
             // 
             this.poznamkaView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.poznamkaView1.Location = new System.Drawing.Point(0, 0);
-            this.poznamkaView1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.poznamkaView1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.poznamkaView1.Name = "poznamkaView1";
-            this.poznamkaView1.Size = new System.Drawing.Size(1016, 953);
+            this.poznamkaView1.Size = new System.Drawing.Size(712, 586);
             this.poznamkaView1.TabIndex = 0;
             this.poznamkaView1.Load += new System.EventHandler(this.poznamkaView1_Load);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1528, 986);
+            this.ClientSize = new System.Drawing.Size(1070, 610);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);

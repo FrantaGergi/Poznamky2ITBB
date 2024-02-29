@@ -14,13 +14,12 @@ namespace Poznamky2ITB
     {
 
         private Poznamka poznamka;
-
+        public event Action PoznamkaChanged;
         public event Action PoznamkaDeleted;// uvzovoky nepotřebujeme, nepotřebujeeme nic dávat
         public PoznamkaView()
         {
             InitializeComponent();
         }
-
         public void SetPoznamka(Poznamka data)
         {
            
@@ -56,7 +55,10 @@ namespace Poznamky2ITB
 
         private void button1_Click(object sender, EventArgs e)// splnění úkolů
         {
+            if(checkedListBox1.CheckedItems.Count == checkedListBox1.Items.Count) {
+            PoznamkaChanged?.Invoke();
 
+            }
         }
     }
 }
