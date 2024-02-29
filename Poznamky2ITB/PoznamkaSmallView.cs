@@ -28,6 +28,9 @@ namespace Poznamky2ITB
             data = poznamka;
             label1.Text = data.Headline;
             label2.Text = data.DueDate.ToString();
+            if (data.Finished)
+                label1.Font = new Font(label1.Font, FontStyle.Strikeout);
+
             pictureBox1.BackColor = DataManager.Instance.ProjectList.First(p => p.Id == data.ProjectId).Color;
 
         }
@@ -38,11 +41,7 @@ namespace Poznamky2ITB
         }
 
 
-        public void ReactingOnStrike( PoznamkaView poznamka) { /// blbost !!!
-            poznamka.ConfirmedPoznamka += () => { 
-            label1.Font = new Font(label1.Font, FontStyle.Strikeout);
-            };
-        }
+      
        
     }
 }

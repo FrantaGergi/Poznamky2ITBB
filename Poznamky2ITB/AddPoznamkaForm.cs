@@ -57,7 +57,7 @@ namespace Poznamky2ITB
             {
                 subtasks.Add(item.ToString());
             }
-
+            newPoznamka.Finished = false;
             newPoznamka.Subtasks = subtasks;
 
             DataManager.Instance.AddPoznamka(newPoznamka);

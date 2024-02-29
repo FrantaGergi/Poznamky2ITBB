@@ -55,12 +55,13 @@ namespace Poznamky2ITB
             
         }
 
-        private void OnPoznamkaSelected(PoznamkaSmallView view)
+        private void OnPoznamkaSelected(PoznamkaSmallView view)// here poznamky 
         {
             if (selectedPoznamka != null)
             {
                 selectedPoznamka.BackColor = SystemColors.Control;
             }
+            selectedPoznamka = view;
             poznamkaView1.SetPoznamka(view.Data);
             view.BackColor = Color.LightBlue;
             poznamkaView1.Show();
@@ -96,16 +97,17 @@ namespace Poznamky2ITB
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)// zde jsou ty poznamky
         {
             var item = comboBox1.SelectedItem;
             if(item != null)
             {
                 var selectedProject = item as Project;
                 var id = selectedProject.Id;
-                foreach(var control in flowLayoutPanel1.Controls)
+                foreach(var control in flowLayoutPanel1.Controls) // herouš Serouš Sexouš
                 {
                     var smallView = control as PoznamkaSmallView;
+
                     if(smallView.Data.ProjectId == id)
                     {
                         smallView.Visible = true;

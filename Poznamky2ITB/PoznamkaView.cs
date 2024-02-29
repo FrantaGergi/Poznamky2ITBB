@@ -12,7 +12,6 @@ namespace Poznamky2ITB
 {
     public partial class PoznamkaView : UserControl
     {
-        public event Action ConfirmedPoznamka;
 
         private Poznamka poznamka;
 
@@ -24,11 +23,17 @@ namespace Poznamky2ITB
 
         public void SetPoznamka(Poznamka data)
         {
+           
+
             this.poznamka = data;
             label1.Text = data.Headline;
             label2.Text = data.Description;
-            label3.Text = $"Vytvořeno{data.DueDate}";
+            label3.Text = $"Vytvořeno {data.DueDate}";
             checkedListBox1.Items.Clear();
+            if(poznamka.Finished)
+                label1.Font = new Font(label1.Font, FontStyle.Strikeout);
+
+
             foreach (var task in data.Subtasks)
             {
                 checkedListBox1.Items.Add(task);
@@ -37,11 +42,6 @@ namespace Poznamky2ITB
             var project = DataManager.Instance.ProjectList.First(p => p.Id == data.ProjectId);
             pictureBox1.BackColor = project.Color;
             label5.Text = project.Name;
-            ConfirmedPoznamka += () =>
-            {
-                label1.Font = new Font(label1.Font, FontStyle.Strikeout);
-
-            };
 
 
         }
@@ -56,7 +56,7 @@ namespace Poznamky2ITB
 
         private void button1_Click(object sender, EventArgs e)// splnění úkolů
         {
-            ConfirmedPoznamka?.Invoke();
+
         }
     }
 }
