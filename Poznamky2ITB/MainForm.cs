@@ -45,6 +45,7 @@ namespace Poznamky2ITB
             selectedPoznamka.Data.Finished = true;
             poznamkaView1.SetPoznamka(selectedPoznamka.Data);
             CreatePoznamkasViews();
+            selectedPoznamka.BackColor = Color.LightBlue;
             DataManager.Instance.SavePoznamkas();
             DataManager.Instance.LoadPoznamkas();
           

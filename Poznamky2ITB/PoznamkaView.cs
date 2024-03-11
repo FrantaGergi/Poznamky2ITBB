@@ -22,20 +22,35 @@ namespace Poznamky2ITB
         }
         public void SetPoznamka(Poznamka data)
         {
-           
+            if (data.Finished) { 
+                button1.Enabled = false;
+            }
+            else
+            {
+                button1.Enabled = true;
+            }
+
 
             this.poznamka = data;
             label1.Text = data.Headline;
             label2.Text = data.Description;
             label3.Text = $"Vytvořeno {data.DueDate}";
             checkedListBox1.Items.Clear();
-            if(poznamka.Finished)
+            if (poznamka.Finished) { 
                 label1.Font = new Font(label1.Font, FontStyle.Strikeout);
+            }
+            else
+            {
+                label1.Font = new Font(label1.Font, FontStyle.Regular);
+            }
+
 
 
             foreach (var task in data.Subtasks)
             {
+
                 checkedListBox1.Items.Add(task);
+
             }
 
             var project = DataManager.Instance.ProjectList.First(p => p.Id == data.ProjectId);

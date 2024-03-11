@@ -29,7 +29,13 @@ namespace Poznamky2ITB
             label1.Text = data.Headline;
             label2.Text = data.DueDate.ToString();
             if (data.Finished)
+            {
                 label1.Font = new Font(label1.Font, FontStyle.Strikeout);
+            }
+            else
+            {
+                label1.Font = new Font(label1.Font, FontStyle.Regular);
+            }
 
             pictureBox1.BackColor = DataManager.Instance.ProjectList.First(p => p.Id == data.ProjectId).Color;
 
